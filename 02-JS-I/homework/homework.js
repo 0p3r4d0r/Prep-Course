@@ -76,13 +76,12 @@ function sonIguales(x, y) {
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  if(str1==str2){
+  if (str1==str2){
     return true;
 
   }else{
     return false;
   }
-
   
 }
 
@@ -163,6 +162,8 @@ function elevarAlCubo(num) {
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
+  var operacion = Math.pow (num , exponent);
+  return operacion;
   
   
 }
@@ -195,11 +196,13 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0){
-      return "Es positivio";
+    
+    return "Es positivo";
+
+
   }else if (numero<0){
     return "Es negativo";
-
-  }else if (numero=0){
+  }else {
     return false;
   }
 
