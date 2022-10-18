@@ -28,8 +28,8 @@ const nuevoModulo = 21 % 5 === 1    ;
 
 function devolverString(str) {
   // "Return" la string provista: str
-  var srt="hola";
-  return srt;
+  
+  return str;
   
 }
 
@@ -67,14 +67,22 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   if (x==y){
     return true;
-  } 
+  } else {
+    return false;
+  }
   
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  // Tu código:
+  if(str1==str2){
+    return true;
+
+  }else{
+    return false;
+  }
+
   
 }
 
@@ -83,6 +91,8 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   if (num<90){
     return true;
+  }else{
+    return false;
   }
   
 
@@ -92,64 +102,90 @@ function menosQueNoventa(num) {
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
-  // Tu código:
+  if (num>50){
+    return true;
+
+  }else{
+    return false;
+  }
   
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
-  // Tu código:
+  var resto= x % y;
+  return resto;
   
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
-  // Tu código:
+  var operacion = num % 2;
+  if (operacion==0){
+    return true;
+
+  }else {
+    return false;
+  }
   
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
-  // Tu código:
+  var operacion = num % 2;
+  if (operacion>0){
+    return true;
+
+  }else {
+    return false;
+  }
   
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
-  // Tu código:
+  var operacion =Math.pow(num,2)
+  return operacion;
+  
+  
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
-  // Tu código:
+  var operacion =Math.pow(num,3)
+  return operacion;
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código:
+  
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
-  // Tu código:
+  var operacion = Math.round(num)
+  return operacion;
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
+  var operacion = Math.ceil(num)
+  return operacion;
   
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  var operacion = Math.random()
+  return operacion;
   
 }
 
