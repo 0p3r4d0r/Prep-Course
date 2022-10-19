@@ -76,7 +76,7 @@ function sonIguales(x, y) {
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  if (str1==str2){
+  if (str1.length==str2.length){
     return true;
 
   }else{
@@ -219,6 +219,9 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
+  var comb = nombre + ' ' + apellido;
+  
+  return comb;
   
   
 }
@@ -226,8 +229,7 @@ function combinarNombres(nombre, apellido) {
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  const so = "Hola";
-  return so + nombre ;
+  return 'Hola ' + nombre + '!'; 
 
   
 }
@@ -250,7 +252,7 @@ function retornarPerimetro(lado){
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo. }
-  const areaT= base * altura / 2 ;
+  const areaT= (base * altura)/2 ;
   return areaT ;
 
 
@@ -271,7 +273,15 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
-  //Escribe tu código aquí
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
+
+  
   
 }
 
